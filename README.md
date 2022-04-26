@@ -1,4 +1,4 @@
-# FACEAPP BOT 1VS1
+# FACEAPP BOT
 
 1. Connetct Samsung S10 with windows
 2. Save images to faceswap to special dir in phone
