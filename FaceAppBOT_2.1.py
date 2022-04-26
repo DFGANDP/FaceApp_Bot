@@ -76,13 +76,13 @@ def niewykryto():
 def algorytm_faceswap():
 
 
-    move("cofacz.jpg")
+    move("jpegs/cofacz.jpg")
     pyautogui.move(0, 80)
     pyautogui.mouseDown()
     time.sleep(1)
     pyautogui.mouseUp()
     time.sleep(0.4)
-    action("Udostepnij.jpg")
+    action("jpegs/Udostepnij.jpg")
     time.sleep(2.3)
     #pyautogui.dragRel(0, -670, button='left')
     #time.sleep(1)
@@ -90,7 +90,7 @@ def algorytm_faceswap():
     #move("WszystkieAplikacje.jpg")
     #time.sleep(1)
     #pyautogui.dragRel(0, -250,2, button='left')
-    action("FaceApp_thumbnail_galeria.jpg")
+    action("jpegs/FaceApp_thumbnail_galeria.jpg")
     time.sleep(2.5) # czas na wczytanie
     pos = imagesearch_numLoop("niewykryto.jpg", 1, 2)
     if pos[0] != -1:
@@ -101,26 +101,26 @@ def algorytm_faceswap():
         pyautogui.click(x=1155, y=167) # w tym miejscu musi byc play z macro recordera
         pyautogui.click()
         time.sleep(4.5)
-        action("Zamiana_twarzy.jpg")
+        action("jpegs/Zamiana_twarzy.jpg")
         time.sleep(0.2)
-        action("Zamiana_twarzy_wew.jpg")
-        action("Wybierz_z_galerii.jpg")
-        action("FaceApp_galeria.jpg")
-        action("All_media.jpg")
+        action("jpegs/Zamiana_twarzy_wew.jpg")
+        action("jpegs/Wybierz_z_galerii.jpg")
+        action("jpegs/FaceApp_galeria.jpg")
+        action("jpegs/All_media.jpg")
         pyautogui.scroll(-2500)
         pyautogui.scroll(-2500)
         pyautogui.scroll(-2500)
         pyautogui.scroll(-2500)
         pyautogui.scroll(-2500)
         time.sleep(0.2)
-        action("Aemixxly.jpg")
+        action("jpegs/Aemixxly.jpg")
         move("X.jpg")
         pyautogui.move(0, 50)
         pyautogui.click()
         ##### TUTAJ DAC ZEBY CZEKALO AZ SIE ZALADUJE ALBO KOLOROWE ZAPISZ ALBO INNY SPOSOB
-        #action("pasek.jpg")
+        #action("jpegs/pasek.jpg")
         time.sleep(10)
-        action("zapisz(ready).jpg")
+        action("jpegs/zapisz(ready).jpg")
         time.sleep(1)
         for i in range (4):
             cofnij()
@@ -139,10 +139,10 @@ def algorytm_galeria():
     time.sleep(1)
     pyautogui.mouseUp()
     time.sleep(0.2)
-    action("kosz_g_bez_drag.jpg")
+    action("jpegs/kosz_g_bez_drag.jpg")
     pyautogui.moveRel(0, -80)
     time.sleep(0.5)
-    action("kosz_galeria.jpg")
+    action("jpegs/kosz_galeria.jpg")
     time.sleep(3.5)
 
 
